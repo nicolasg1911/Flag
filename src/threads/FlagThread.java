@@ -8,17 +8,17 @@ public class FlagThread extends Thread{
 
 	private Flag flag;
 	
-	public FlagThread(int color, long sleep) {
-		flag= new Flag(color,sleep);
+	public FlagThread(int color, int sleep,int position,int size) {
+		flag= new Flag(color,sleep,position,size);
 	}
 	public void run() {
 		try {
 			flag.initialize();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+	
 			e.printStackTrace();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
+		
 			e.printStackTrace();
 		}
 	}
