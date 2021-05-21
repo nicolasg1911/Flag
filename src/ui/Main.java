@@ -10,13 +10,12 @@ public class Main {
 	
 	public static void main(String[] args) {
 		System.out.println(ESC+"2J");
-	
-	FlagThread colorY =new FlagThread(yellow,20,1,10);
-	FlagThread colorB =new FlagThread(blue,50,11,5);
-	FlagThread colorR =new FlagThread(red,70,16,5);
-	colorY.start();
-	colorB.start();
-	colorR.start();
+	FlagThread colorYellow =new FlagThread(yellow,20,1,10);
+	FlagThread colorBlue =new FlagThread(blue,50,11,5);
+	FlagThread colorRed =new FlagThread(red,70,16,5);
+	colorYellow.start();
+	colorBlue.start();
+	colorRed.start();
 
 	}
 }
